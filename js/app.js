@@ -1,1 +1,399 @@
-const _0x580e04=_0x4566;function _0x3bbf(){const _0x422890=['2ptLlnq','getItem','.data-box3','You\x20won','films','The\x20mystery\x20character\x20was...\x20','2562190GCFvXs','DOMContentLoaded','<li>','#close-modal-three','appendChild','random','9YJZKuB','gender','I\x20couldn\x27t\x20guess\x20the\x20mystery\x20character...\x20','classList','.about-btn','\x20guesses!\x20Play\x20Darth\x20Vordle\x20at\x20darthvordle.com\x20today!','12kluLkB','.guess-input','.data-box1','#modal-three','active','createElement','You\x20lost','innerHTML','6EFpPWS','mass','firstChild','length','remove','.stats-btn','.guess-btn','color','20528420YGTrhO','log','setItem','clipboard','.suggestion-box','6878977pyPgfk','Games\x20Played','.data-box2','target','.data-box4','Your\x20score\x20has\x20been\x20copied\x20to\x20your\x20clipboard!','.end-header','\x20games\x20played\x20on\x20Darth\x20Vordle!\x20Play\x20Darth\x20Vordle\x20at\x20darthvordle.com\x20today!','#06e606','click','#FFE81F','#close-modal-four','lastChild','.play-again','no\x20related\x20character\x20found','species','createTextNode','round','Times\x20Won','onclick','value','addEventListener','.\x20Play\x20Darth\x20Vordle\x20at\x20darthvordle.com\x20today!','images/','then','map','No\x20matching\x20attributes','style','Score\x20copied\x20to\x20clipboard','filter','.character-info','744Wcadbj','join','.question','&#x2191','querySelector','clear','\x20of\x208','.search-container','</li>','#modal-four','ft\x20','.win-pct','stats\x20copied\x20to\x20clipboard','div','name','removeChild','placeholder','6095112sSNBeD','Congratulations,\x20You\x20Won!','Enter\x20Guess\x20','writeText','homeworld','.data-box7','textContent','234704NJNFBV','innerText','#modal-two','height','I\x20was\x20able\x20to\x20guess\x20the\x20mystery\x20character...\x20','toLocaleLowerCase','#close-modal-one','add','stringify','startsWith','floor','4178965RlRZEW'];_0x3bbf=function(){return _0x422890;};return _0x3bbf();}(function(_0x24c265,_0x4ae6ed){const _0x4926be=_0x4566,_0x2caaf0=_0x24c265();while(!![]){try{const _0x2e7e3a=parseInt(_0x4926be(0x113))/0x1*(-parseInt(_0x4926be(0xef))/0x2)+parseInt(_0x4926be(0x125))/0x3*(parseInt(_0x4926be(0x107))/0x4)+parseInt(_0x4926be(0x112))/0x5+-parseInt(_0x4926be(0xc3))/0x6*(-parseInt(_0x4926be(0xd0))/0x7)+parseInt(_0x4926be(0x100))/0x8+parseInt(_0x4926be(0x11f))/0x9*(-parseInt(_0x4926be(0x119))/0xa)+-parseInt(_0x4926be(0xcb))/0xb;if(_0x2e7e3a===_0x4ae6ed)break;else _0x2caaf0['push'](_0x2caaf0['shift']());}catch(_0x3e346f){_0x2caaf0['push'](_0x2caaf0['shift']());}}}(_0x3bbf,0xa8eca));function _0x4566(_0x48fa60,_0x29613){const _0x3bbf2d=_0x3bbf();return _0x4566=function(_0x4566aa,_0x3a8214){_0x4566aa=_0x4566aa-0xbe;let _0x15e056=_0x3bbf2d[_0x4566aa];return _0x15e056;},_0x4566(_0x48fa60,_0x29613);}const searchContainer=document['querySelector'](_0x580e04(0xf6)),searchInput=document[_0x580e04(0xf3)](_0x580e04(0x126)),suggestionBox=document[_0x580e04(0xf3)](_0x580e04(0xcf)),nameContainer=document[_0x580e04(0xf3)](_0x580e04(0x127)),filmContainer=document[_0x580e04(0xf3)](_0x580e04(0xd2)),homeworldContainer=document['querySelector'](_0x580e04(0x115)),genderContainer=document['querySelector'](_0x580e04(0xd4)),speciesContainer=document['querySelector']('.data-box5'),heightContainer=document[_0x580e04(0xf3)]('.data-box6'),massContainer=document['querySelector'](_0x580e04(0x105)),guessBtn=document[_0x580e04(0xf3)](_0x580e04(0xc9)),htpBtn=document[_0x580e04(0xf3)](_0x580e04(0xf1)),closeModalOne=document['querySelector'](_0x580e04(0x10d)),htpModal=document[_0x580e04(0xf3)]('#modal-one'),endModal=document['querySelector'](_0x580e04(0x109)),endHeader=document[_0x580e04(0xf3)](_0x580e04(0xd6)),endMessage=document['querySelector']('.end-message'),characterImage=document[_0x580e04(0xf3)]('.character-image'),playAgainBtn=document[_0x580e04(0xf3)](_0x580e04(0xdd)),shareScoreBtn=document['querySelector']('.share-score'),statsBtn=document[_0x580e04(0xf3)](_0x580e04(0xc8)),statsModal=document['querySelector'](_0x580e04(0xbe)),closeModalThree=document['querySelector'](_0x580e04(0x11c)),winPCT=document['querySelector'](_0x580e04(0xfa)),gamesPlayed=document['querySelector']('.num-games-played'),statsShare=document[_0x580e04(0xf3)]('.share-stats'),aboutBtn=document[_0x580e04(0xf3)](_0x580e04(0x123)),aboutModal=document[_0x580e04(0xf3)](_0x580e04(0xf8)),closeModalFour=document['querySelector'](_0x580e04(0xdb)),characterDiv=document[_0x580e04(0xf3)](_0x580e04(0xee));let guessCharacter,mysteryIndex=Math[_0x580e04(0x111)](Math[_0x580e04(0x11e)]()*0x53+0x1)-0x1,guessCounter=0x0,winStatus,numWins=0x0,numGames=0x0;window['addEventListener']('DOMContentLoaded',function(){const _0x14694d=_0x580e04,_0x866ce8=localStorage[_0x14694d(0x114)](_0x14694d(0xd1));if(_0x866ce8)return;else localStorage[_0x14694d(0xcd)](_0x14694d(0xd1),'0'),localStorage[_0x14694d(0xcd)](_0x14694d(0xe2),'0');});function resetUI(){const _0x2e7af7=_0x580e04;while(nameContainer['firstChild']){nameContainer[_0x2e7af7(0xfe)](nameContainer[_0x2e7af7(0xdc)]);}while(filmContainer['firstChild']){filmContainer[_0x2e7af7(0xfe)](filmContainer[_0x2e7af7(0xdc)]);}while(homeworldContainer[_0x2e7af7(0xc5)]){homeworldContainer[_0x2e7af7(0xfe)](homeworldContainer[_0x2e7af7(0xdc)]);}while(genderContainer[_0x2e7af7(0xc5)]){genderContainer[_0x2e7af7(0xfe)](genderContainer[_0x2e7af7(0xdc)]);}while(speciesContainer[_0x2e7af7(0xc5)]){speciesContainer[_0x2e7af7(0xfe)](speciesContainer[_0x2e7af7(0xdc)]);}while(heightContainer[_0x2e7af7(0xc5)]){heightContainer[_0x2e7af7(0xfe)](heightContainer['lastChild']);}while(massContainer[_0x2e7af7(0xc5)]){massContainer[_0x2e7af7(0xfe)](massContainer[_0x2e7af7(0xdc)]);}}function updateStats(_0x27a920){const _0xd161fa=_0x580e04,_0x4ae72a=parseInt(localStorage[_0xd161fa(0x114)](_0xd161fa(0xd1)))+0x1;localStorage[_0xd161fa(0xcd)](_0xd161fa(0xd1),JSON[_0xd161fa(0x10f)](_0x4ae72a));if(_0x27a920){const _0x4ee7a2=parseInt(localStorage[_0xd161fa(0x114)]('Times\x20Won'))+0x1;localStorage[_0xd161fa(0xcd)]('Times\x20Won',JSON[_0xd161fa(0x10f)](_0x4ee7a2));}}window[_0x580e04(0xe5)](_0x580e04(0x11a),function(){const _0x45ff69=_0x580e04;htpModal['classList'][_0x45ff69(0x10e)](_0x45ff69(0xbf)),closeModalOne['addEventListener'](_0x45ff69(0xd9),function(){const _0x3f5a25=_0x45ff69;htpModal[_0x3f5a25(0x122)]['remove'](_0x3f5a25(0xbf));}),window[_0x45ff69(0xe5)](_0x45ff69(0xd9),function(_0xc8217e){const _0x5e9520=_0x45ff69;_0xc8217e[_0x5e9520(0xd3)]==htpModal&&htpModal[_0x5e9520(0x122)]['remove'](_0x5e9520(0xbf));});}),htpBtn['addEventListener'](_0x580e04(0xd9),function(){const _0x1bbf71=_0x580e04;htpModal['classList'][_0x1bbf71(0x10e)](_0x1bbf71(0xbf)),closeModalOne[_0x1bbf71(0xe5)](_0x1bbf71(0xd9),function(){const _0x78b791=_0x1bbf71;htpModal[_0x78b791(0x122)][_0x78b791(0xc7)](_0x78b791(0xbf));}),window['addEventListener'](_0x1bbf71(0xd9),function(_0x3d19ab){const _0x151ca9=_0x1bbf71;_0x3d19ab['target']==htpModal&&htpModal[_0x151ca9(0x122)]['remove']('active');});}),statsBtn[_0x580e04(0xe5)](_0x580e04(0xd9),function(){const _0x51d7d5=_0x580e04;let _0xbee1cb=localStorage[_0x51d7d5(0x114)](_0x51d7d5(0xd1));gamesPlayed[_0x51d7d5(0x108)]=_0xbee1cb;let _0x13150d=Math[_0x51d7d5(0xe1)](parseInt(localStorage[_0x51d7d5(0x114)]('Times\x20Won'))/parseInt(localStorage[_0x51d7d5(0x114)]('Games\x20Played'))*0x64)+'%';_0xbee1cb==0x0?winPCT['innerText']='0%':winPCT[_0x51d7d5(0x108)]=_0x13150d,statsModal['classList'][_0x51d7d5(0x10e)](_0x51d7d5(0xbf)),closeModalThree['addEventListener'](_0x51d7d5(0xd9),function(){const _0x3bdd50=_0x51d7d5;statsModal['classList'][_0x3bdd50(0xc7)](_0x3bdd50(0xbf));}),window['addEventListener'](_0x51d7d5(0xd9),function(_0x245047){const _0x570fb3=_0x51d7d5;_0x245047['target']==statsModal&&statsModal['classList'][_0x570fb3(0xc7)](_0x570fb3(0xbf));}),statsShare[_0x51d7d5(0xe5)](_0x51d7d5(0xd9),function(){const _0x1d1314=_0x51d7d5;let _0x472f38='I\x20have\x20a\x20'+_0x13150d+'\x20win\x20percentage\x20with\x20'+_0xbee1cb+_0x1d1314(0xd7);navigator[_0x1d1314(0xce)][_0x1d1314(0x103)](_0x472f38)[_0x1d1314(0xe8)](function(){const _0x2dc064=_0x1d1314;console[_0x2dc064(0xcc)](_0x2dc064(0xfb)),alert('Your\x20stats\x20have\x20been\x20copied\x20to\x20your\x20clipboard!');});});}),aboutBtn[_0x580e04(0xe5)](_0x580e04(0xd9),function(){const _0x404f35=_0x580e04;aboutModal[_0x404f35(0x122)][_0x404f35(0x10e)](_0x404f35(0xbf)),closeModalFour['addEventListener']('click',function(){const _0x2fe71f=_0x404f35;aboutModal[_0x2fe71f(0x122)][_0x2fe71f(0xc7)](_0x2fe71f(0xbf));}),window['addEventListener']('click',function(_0x507706){const _0x197614=_0x404f35;_0x507706[_0x197614(0xd3)]==aboutModal&&aboutModal[_0x197614(0x122)][_0x197614(0xc7)]('active');});}),searchInput['onkeyup']=_0x36b1d5=>{const _0x2c3502=_0x580e04;let _0x45ec47=_0x36b1d5[_0x2c3502(0xd3)][_0x2c3502(0xe4)],_0x1d8f50=[];if(_0x45ec47){_0x1d8f50=nameList[_0x2c3502(0xed)](_0x53c831=>{const _0x596a4a=_0x2c3502;return _0x53c831[_0x596a4a(0x10c)]()[_0x596a4a(0x110)](_0x45ec47[_0x596a4a(0x10c)]());}),_0x1d8f50=_0x1d8f50[_0x2c3502(0xe9)](_0x4d4591=>{const _0x33950d=_0x2c3502;return _0x4d4591=_0x33950d(0x11b)+_0x4d4591+_0x33950d(0xf7);}),displaySuggestions(_0x1d8f50),searchContainer[_0x2c3502(0x122)][_0x2c3502(0x10e)](_0x2c3502(0xbf));let _0x18faf8=suggestionBox['querySelectorAll']('li');for(let _0x203cbe=0x0;_0x203cbe<_0x18faf8[_0x2c3502(0xc6)];_0x203cbe++){_0x18faf8[_0x203cbe]['setAttribute'](_0x2c3502(0xe3),'select(this)');}}else searchContainer[_0x2c3502(0x122)][_0x2c3502(0xc7)](_0x2c3502(0xbf));};function displaySuggestions(_0x314367){const _0x7b528=_0x580e04;let _0x35ec35;!_0x314367['length']?(console['log'](_0x7b528(0xde)),searchContainer['classList']['remove'](_0x7b528(0xbf)),userValue=searchInput[_0x7b528(0xe4)],_0x35ec35=_0x7b528(0x11b)+userValue+_0x7b528(0xf7)):_0x35ec35=_0x314367[_0x7b528(0xf0)](''),suggestionBox['innerHTML']=_0x35ec35;}function select(_0x28d7d4){const _0xec9ab3=_0x580e04;let _0x5cd6f1=_0x28d7d4[_0xec9ab3(0x106)];searchInput[_0xec9ab3(0xe4)]=_0x5cd6f1,searchContainer[_0xec9ab3(0x122)]['remove'](_0xec9ab3(0xbf)),guessCounter++;let _0xfecff9=guessCounter+0x1;searchInput[_0xec9ab3(0xff)]=_0xec9ab3(0x102)+_0xfecff9+_0xec9ab3(0xf5),console[_0xec9ab3(0xf4)](),characterDiv[_0xec9ab3(0x122)][_0xec9ab3(0x10e)](_0xec9ab3(0xbf)),getGuess(),checkGuess();}function getGuess(){const _0x15363b=_0x580e04;for(let _0x3af501=0x0;_0x3af501<characters['length'];_0x3af501++){characters[_0x3af501]['name']==searchInput[_0x15363b(0xe4)]&&(guessCharacter=characters[_0x3af501]);}console[_0x15363b(0xcc)](guessCharacter);}function gameDone(){const _0x2f34d2=_0x580e04;characterDiv[_0x2f34d2(0x122)][_0x2f34d2(0xc7)](_0x2f34d2(0xbf)),updateStats(winStatus),endModal[_0x2f34d2(0x122)][_0x2f34d2(0x10e)](_0x2f34d2(0xbf));let _0x1fb418=_0x2f34d2(0xe7)+mysteryIndex+'.jpg';characterImage['src']=_0x1fb418;}function toFeet(_0x10899c){const _0x18c0ed=_0x580e04;let _0x34d630=_0x10899c*0.3937/0xc,_0x535a15=Math[_0x18c0ed(0x111)](_0x34d630),_0x3761aa=Math[_0x18c0ed(0xe1)]((_0x34d630-_0x535a15)*0xc);return _0x535a15+_0x18c0ed(0xf9)+_0x3761aa+'in';}function checkGuess(){const _0x527a48=_0x580e04,_0x22e6ec=document[_0x527a48(0xc0)](_0x527a48(0xfc)),_0x336c46=document[_0x527a48(0xe0)](guessCounter+'.\x20'+guessCharacter[_0x527a48(0xfd)]);_0x22e6ec['appendChild'](_0x336c46),nameContainer[_0x527a48(0x11d)](_0x22e6ec);const _0x19dcae=document[_0x527a48(0xc0)]('div'),_0x355761=document['createTextNode'](guessCounter+'.\x20'+guessCharacter['films'][0x0]);_0x19dcae[_0x527a48(0x11d)](_0x355761),filmContainer[_0x527a48(0x11d)](_0x19dcae);const _0xa0d461=document[_0x527a48(0xc0)](_0x527a48(0xfc)),_0x56467c=document[_0x527a48(0xe0)](guessCounter+'.\x20'+guessCharacter['homeworld']);_0xa0d461[_0x527a48(0x11d)](_0x56467c),homeworldContainer[_0x527a48(0x11d)](_0xa0d461);const _0x38d686=document[_0x527a48(0xc0)](_0x527a48(0xfc)),_0x2dad32=document[_0x527a48(0xe0)](guessCounter+'.\x20'+guessCharacter[_0x527a48(0x120)]);_0x38d686[_0x527a48(0x11d)](_0x2dad32),genderContainer[_0x527a48(0x11d)](_0x38d686);const _0x3daedd=document[_0x527a48(0xc0)]('div'),_0x1d79fd=document[_0x527a48(0xe0)](guessCounter+'.\x20'+guessCharacter['species']);_0x3daedd[_0x527a48(0x11d)](_0x1d79fd),speciesContainer[_0x527a48(0x11d)](_0x3daedd);const _0x20351b=document[_0x527a48(0xc0)]('div');let _0xff13f3;if(guessCharacter[_0x527a48(0x10a)]=='unknown')_0xff13f3=document[_0x527a48(0xe0)](guessCounter+'.\x20'+guessCharacter['height']);else{let _0x3bb13a=toFeet(guessCharacter['height']);_0xff13f3=document['createTextNode'](guessCounter+'.\x20'+_0x3bb13a);}_0x20351b[_0x527a48(0x11d)](_0xff13f3),heightContainer['appendChild'](_0x20351b);const _0x4468b6=document[_0x527a48(0xc0)](_0x527a48(0xfc));let _0x3cac4a;guessCharacter[_0x527a48(0xc4)]=='unknown'?_0x3cac4a=document[_0x527a48(0xe0)](guessCounter+'.\x20'+guessCharacter['mass']):_0x3cac4a=document[_0x527a48(0xe0)](guessCounter+'.\x20'+Math[_0x527a48(0xe1)](guessCharacter[_0x527a48(0xc4)]*2.20462)+'lbs');_0x4468b6[_0x527a48(0x11d)](_0x3cac4a),massContainer[_0x527a48(0x11d)](_0x4468b6);let _0x22eb4f=0x0,_0x11d054=characters[mysteryIndex];if(guessCharacter[_0x527a48(0xfd)]==_0x11d054[_0x527a48(0xfd)])console[_0x527a48(0xcc)](_0x527a48(0x116)),winStatus=!![],gameDone(),endHeader[_0x527a48(0x108)]=_0x527a48(0x101),endMessage[_0x527a48(0x108)]=_0x527a48(0x118)+_0x11d054[_0x527a48(0xfd)],playAgainBtn[_0x527a48(0xe5)](_0x527a48(0xd9),function(){const _0x369e43=_0x527a48;return endModal[_0x369e43(0x122)]['remove'](_0x369e43(0xbf)),resetUI(),guessCounter=0x0,mysteryIndex=Math[_0x369e43(0x111)](Math[_0x369e43(0x11e)]()*0x53+0x1)-0x1;}),shareScoreBtn[_0x527a48(0xe5)](_0x527a48(0xd9),function(){const _0x3848fc=_0x527a48;let _0x36c7d0=_0x3848fc(0x10b)+_0x11d054[_0x3848fc(0xfd)]+'\x20in\x20'+guessCounter+_0x3848fc(0x124);navigator['clipboard'][_0x3848fc(0x103)](_0x36c7d0)[_0x3848fc(0xe8)](function(){const _0x328c4e=_0x3848fc;console[_0x328c4e(0xcc)]('Score\x20copied\x20to\x20clipboard'),alert('Your\x20score\x20has\x20been\x20copied\x20to\x20your\x20clipboard!');});}),searchInput['value']='',searchInput[_0x527a48(0xff)]='Enter\x20Guess\x201\x20of\x208';else{if(guessCounter!=0x8){guessCharacter[_0x527a48(0x117)][0x0]==_0x11d054[_0x527a48(0x117)][0x0]&&(_0x19dcae[_0x527a48(0xeb)]['color']=_0x527a48(0xd8),_0x22eb4f++);guessCharacter[_0x527a48(0x104)]==_0x11d054[_0x527a48(0x104)]&&(_0xa0d461[_0x527a48(0xeb)][_0x527a48(0xca)]=_0x527a48(0xd8),_0x22eb4f++);guessCharacter[_0x527a48(0xdf)]==_0x11d054[_0x527a48(0xdf)]&&(_0x3daedd[_0x527a48(0xeb)][_0x527a48(0xca)]=_0x527a48(0xd8),_0x22eb4f++);guessCharacter[_0x527a48(0x120)]==_0x11d054['gender']&&(_0x38d686[_0x527a48(0xeb)][_0x527a48(0xca)]='#06e606',_0x22eb4f++);const _0x2925c6=Number(guessCharacter[_0x527a48(0x10a)]),_0x4f0f32=Number(_0x11d054[_0x527a48(0x10a)]);if(_0x2925c6==_0x4f0f32)_0x20351b[_0x527a48(0xeb)][_0x527a48(0xca)]=_0x527a48(0xd8),_0x22eb4f++;else{if(_0x2925c6>_0x4f0f32)_0x20351b[_0x527a48(0xc2)]=_0x20351b['innerText']+'&#x2193',_0x2925c6-_0x4f0f32<=0x5&&(_0x20351b[_0x527a48(0xeb)][_0x527a48(0xca)]=_0x527a48(0xda));else _0x4f0f32>_0x2925c6&&(_0x20351b[_0x527a48(0xc2)]=_0x20351b[_0x527a48(0x108)]+_0x527a48(0xf2),_0x4f0f32-_0x2925c6<=0x5&&(_0x20351b[_0x527a48(0xeb)][_0x527a48(0xca)]=_0x527a48(0xda)));}const _0x1d86e4=Number(guessCharacter['mass']),_0x5817f9=Number(_0x11d054['mass']);if(_0x1d86e4==_0x5817f9)_0x4468b6['style']['color']='#06e606',_0x22eb4f++;else{if(_0x1d86e4>_0x5817f9)_0x4468b6[_0x527a48(0xc2)]=_0x4468b6[_0x527a48(0x108)]+'&#x2193',_0x1d86e4-_0x5817f9<=0x5&&(_0x4468b6[_0x527a48(0xeb)]['color']=_0x527a48(0xda));else _0x5817f9>_0x1d86e4?(_0x4468b6[_0x527a48(0xc2)]=_0x4468b6['innerText']+_0x527a48(0xf2),_0x5817f9-_0x1d86e4<=0x5&&(_0x4468b6[_0x527a48(0xeb)][_0x527a48(0xca)]='#FFE81F')):console['log'](_0x1d86e4,_0x5817f9);}_0x22eb4f==0x0&&console[_0x527a48(0xcc)](_0x527a48(0xea)),searchInput[_0x527a48(0xe4)]='';}else console[_0x527a48(0xcc)](_0x527a48(0xc1)),winStatus=![],gameDone(),endHeader['innerText']='Oops,\x20You\x20Lost!',endMessage[_0x527a48(0x108)]=_0x527a48(0x118)+_0x11d054[_0x527a48(0xfd)],playAgainBtn[_0x527a48(0xe5)](_0x527a48(0xd9),function(){const _0x249f16=_0x527a48;return endModal['classList'][_0x249f16(0xc7)](_0x249f16(0xbf)),resetUI(),guessCounter=0x0,mysteryIndex=Math[_0x249f16(0x111)](Math[_0x249f16(0x11e)]()*0x53+0x1)-0x1;}),shareScoreBtn['addEventListener'](_0x527a48(0xd9),function(){const _0x1c8c1a=_0x527a48;let _0x450f86=_0x1c8c1a(0x121)+_0x11d054['name']+_0x1c8c1a(0xe6);navigator['clipboard'][_0x1c8c1a(0x103)](_0x450f86)['then'](function(){const _0x559b71=_0x1c8c1a;console['log'](_0x559b71(0xec)),alert(_0x559b71(0xd5));});}),searchInput[_0x527a48(0xe4)]='',searchInput[_0x527a48(0xff)]='Enter\x20Guess\x201\x20of\x208';}}
+//search bar elements
+const searchContainer = document.querySelector(".search-container")
+const searchInput = document.querySelector(".guess-input")
+const suggestionBox = document.querySelector(".suggestion-box")
+//containers for the different info
+const nameContainer = document.querySelector(".data-box1")
+const filmContainer = document.querySelector(".data-box2")
+const homeworldContainer = document.querySelector(".data-box3")
+const genderContainer = document.querySelector(".data-box4")
+const speciesContainer = document.querySelector(".data-box5")
+const heightContainer = document.querySelector(".data-box6")
+const massContainer = document.querySelector(".data-box7")
+//btn that submits guess
+const guessBtn = document.querySelector(".guess-btn")
+//modal one elements
+const htpBtn = document.querySelector(".question")
+const closeModalOne = document.querySelector("#close-modal-one")
+const htpModal = document.querySelector("#modal-one")
+//modal two elements
+const endModal = document.querySelector("#modal-two")
+const endHeader = document.querySelector(".end-header")
+const endMessage = document.querySelector(".end-message")
+const characterImage = document.querySelector(".character-image")
+const playAgainBtn = document.querySelector(".play-again")
+const shareScoreBtn = document.querySelector(".share-score")
+//modal three elements
+const statsBtn = document.querySelector(".stats-btn")
+const statsModal = document.querySelector("#modal-three")
+const closeModalThree = document.querySelector("#close-modal-three")
+const winPCT = document.querySelector(".win-pct")
+const gamesPlayed = document.querySelector(".num-games-played")
+const statsShare = document.querySelector(".share-stats")
+//modal four elements
+const aboutBtn = document.querySelector(".about-btn")
+const aboutModal = document.querySelector("#modal-four")
+const closeModalFour = document.querySelector("#close-modal-four")
+//character info div
+const characterDiv = document.querySelector(".character-info")
+//index of character that user guesses
+let guessCharacter
+//index of mystery character
+let mysteryIndex = Math.floor((Math.random() * 83) + 1) - 1
+//checks how many times the user has made a guess
+let guessCounter = 0
+//stores the amount of games a user has played in local data
+let winStatus
+let numWins = 0
+let numGames = 0
+
+//checks to see if the user has no stats in local storage and if they don't initalizes the stats
+window.addEventListener("DOMContentLoaded", function() {
+    const numGamesKey = localStorage.getItem('Games Played')
+    if (numGamesKey) {
+        return
+    } else {
+        localStorage.setItem('Games Played', '0')
+        localStorage.setItem('Times Won', '0')
+    }
+})
+
+//function that resets the UI
+function resetUI() {
+    while (nameContainer.firstChild) {
+        nameContainer.removeChild(nameContainer.lastChild);
+    }
+    while (filmContainer.firstChild) {
+    filmContainer.removeChild(filmContainer.lastChild);
+    }
+    while (homeworldContainer.firstChild) {
+    homeworldContainer.removeChild(homeworldContainer.lastChild);
+    }
+    while (genderContainer.firstChild) {
+    genderContainer.removeChild(genderContainer.lastChild);
+    }
+    while (speciesContainer.firstChild) {
+    speciesContainer.removeChild(speciesContainer.lastChild);
+    }
+    while (heightContainer.firstChild) {
+    heightContainer.removeChild(heightContainer.lastChild);
+    }
+    while (massContainer.firstChild) {
+    massContainer.removeChild(massContainer.lastChild);
+    }
+}
+
+//updates the statistics saved in the local storage
+function updateStats(winStatus) {
+    const newNumGames = parseInt(localStorage.getItem('Games Played')) + 1
+    localStorage.setItem('Games Played', JSON.stringify(newNumGames))
+    if (winStatus) {
+        const newTimesWon = parseInt(localStorage.getItem('Times Won')) + 1
+        localStorage.setItem('Times Won', JSON.stringify(newTimesWon))
+    }
+}
+
+//automatically opens up how to play modal
+window.addEventListener("DOMContentLoaded", function () {
+    htpModal.classList.add("active")
+    //closes modal if user clicks close button
+    closeModalOne.addEventListener("click", function() {
+        htpModal.classList.remove("active")
+    })
+    //closes modal if anywhere outside of the modal is clicked
+    window.addEventListener("click", function(event) {
+        if (event.target == htpModal) {
+            htpModal.classList.remove("active")
+        }
+    })
+})
+
+//opens up how to play modal (modal one)
+htpBtn.addEventListener("click", function() {
+    htpModal.classList.add("active")
+    closeModalOne.addEventListener("click", function() {
+        htpModal.classList.remove("active")
+    })
+
+    //closes modal if anywhere outside of the modal is clicked
+    window.addEventListener("click", function(event) {
+        if (event.target == htpModal) {
+            htpModal.classList.remove("active")
+        }
+    })
+})
+
+//brings up the stats modal
+statsBtn.addEventListener("click", function() {
+    let gamesPlayedValue = localStorage.getItem('Games Played')
+    gamesPlayed.innerText = gamesPlayedValue
+    let winPCTValue = Math.round(parseInt(localStorage.getItem('Times Won')) / parseInt(localStorage.getItem('Games Played')) * 100) + "%"
+    if (gamesPlayedValue == 0) {
+        winPCT.innerText = "0%"
+    } else {
+        winPCT.innerText = winPCTValue 
+    }
+    statsModal.classList.add("active")
+    closeModalThree.addEventListener("click", function() {
+        statsModal.classList.remove("active")
+    })
+    window.addEventListener("click", function(event) {
+        if (event.target == statsModal) {
+            statsModal.classList.remove("active")
+        }
+    })
+    statsShare.addEventListener('click', function() {
+        let statsContent = "I have a " + winPCTValue + " win percentage with " + gamesPlayedValue + " games played on Darth Vordle! Play Darth Vordle at darthvordle.com today!"
+        navigator.clipboard.writeText(statsContent).then(function () {
+            console.log("stats copied to clipboard")
+            alert("Your stats have been copied to your clipboard!")
+        }) 
+    })
+})
+
+aboutBtn.addEventListener("click", function() {
+    aboutModal.classList.add("active")
+    closeModalFour.addEventListener("click", function() {
+        aboutModal.classList.remove('active')
+    })
+    window.addEventListener("click", function(event) {
+        if (event.target == aboutModal) {
+            aboutModal.classList.remove('active')
+        }
+    })
+})
+
+//code for search bar and suggestions
+searchInput.onkeyup = (e) => {
+    let userData = e.target.value
+    let emptyArray = []
+    if (userData) {
+        emptyArray = nameList.filter((data) => {
+            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase())
+        })
+        emptyArray = emptyArray.map((data) => {
+            return data = "<li>" + data + "</li>"
+        })
+        displaySuggestions(emptyArray)
+        searchContainer.classList.add("active")
+        let allList = suggestionBox.querySelectorAll('li')
+        for (let i = 0; i < allList.length; i++) {
+            allList[i].setAttribute('onclick', 'select(this)')
+        }
+    } else {
+        searchContainer.classList.remove("active")
+    }
+}
+
+//displays the suggestions
+function displaySuggestions(list) {
+    let listData
+    if (!list.length) {
+        console.log("no related character found")
+        searchContainer.classList.remove("active")
+        userValue = searchInput.value
+        listData = '<li>' + userValue + '</li>'
+    } 
+    else {
+        listData = list.join('')
+    }
+    suggestionBox.innerHTML = listData
+}
+
+//makes the guess input what character the user clicks
+function select(element) {
+    let pickUserData = element.textContent
+    searchInput.value = pickUserData
+    searchContainer.classList.remove("active")
+    //tracks the amount of guesses made
+    guessCounter++
+    let futureGuessNumber = guessCounter + 1
+    searchInput.placeholder = "Enter Guess " + futureGuessNumber + " of 8"
+    //clears the console
+    console.clear()
+    //shows the character info div
+    characterDiv.classList.add("active")
+    getGuess()
+    checkGuess()
+}
+
+function getGuess() {
+    for (let i = 0; i < characters.length; i++) {
+        if (characters[i].name == searchInput.value) {
+            guessCharacter = characters[i]
+        }
+    }
+    console.log(guessCharacter)
+}
+
+function gameDone() {
+    characterDiv.classList.remove('active')
+    updateStats(winStatus)
+    endModal.classList.add('active')
+    let imageURL = "images/" + mysteryIndex + ".jpg"
+    characterImage.src = imageURL
+}
+
+function toFeet(height) {
+    let realFeet = ((height*0.393700) / 12)
+    let feet = Math.floor(realFeet)
+    let inches = Math.round((realFeet - feet) * 12)
+    return feet + "ft " + inches + 'in'
+}
+
+function checkGuess() {
+    //adds the name to the UI
+    const nameDiv = document.createElement("div")
+    const nameContent = document.createTextNode(guessCounter + ". " + guessCharacter.name)
+    nameDiv.appendChild(nameContent)
+    nameContainer.appendChild(nameDiv)
+    //adds the film to the UI
+    const filmDiv = document.createElement("div")
+    const filmContent = document.createTextNode(guessCounter + ". " + guessCharacter.films[0])
+    filmDiv.appendChild(filmContent)
+    filmContainer.appendChild(filmDiv)
+    //adds the homeworld to the UI
+    const homeworldDiv = document.createElement("div")
+    const homeworldContent = document.createTextNode(guessCounter + ". " + guessCharacter.homeworld)
+    homeworldDiv.appendChild(homeworldContent)
+    homeworldContainer.appendChild(homeworldDiv)
+    //adds the gender to the UI
+    const genderDiv = document.createElement("div")
+    const genderContent = document.createTextNode(guessCounter + ". " + guessCharacter.gender)
+    genderDiv.appendChild(genderContent)
+    genderContainer.appendChild(genderDiv)
+    //adds the species to the Ui
+    const speciesDiv = document.createElement("div")
+    const speciesContent = document.createTextNode(guessCounter + ". " + guessCharacter.species)
+    speciesDiv.appendChild(speciesContent)
+    speciesContainer.appendChild(speciesDiv)
+    //adds the height to the UI
+    const heightDiv = document.createElement("div")
+    let heightContent
+    if (guessCharacter.height == "unknown") {
+        heightContent = document.createTextNode(guessCounter + ". " + guessCharacter.height)
+    } else {
+        let guessHeightCustomary = toFeet(guessCharacter.height)
+        heightContent = document.createTextNode(guessCounter + ". " + guessHeightCustomary)
+    }
+    heightDiv.appendChild(heightContent)
+    heightContainer.appendChild(heightDiv)
+    //adds the mass to the UI
+    const massDiv = document.createElement("div")
+    let massContent
+    if (guessCharacter.mass == "unknown") {
+        massContent = document.createTextNode(guessCounter + ". " + guessCharacter.mass)
+    } else {
+        massContent = document.createTextNode(guessCounter + ". " + Math.round(guessCharacter.mass * 2.20462) + "lbs")
+    }
+    massDiv.appendChild(massContent)
+    massContainer.appendChild(massDiv)
+    let correctCounter = 0
+    let mysteryCharacter = characters[mysteryIndex]
+    if (guessCharacter.name == mysteryCharacter.name) {
+        console.log("You won")
+        winStatus = true
+        gameDone()
+        endHeader.innerText = "Congratulations, You Won!"
+        endMessage.innerText = "The mystery character was... " + mysteryCharacter.name
+        playAgainBtn.addEventListener("click", function() {
+            endModal.classList.remove("active")
+            resetUI()
+            guessCounter = 0
+            return mysteryIndex = Math.floor((Math.random() * 83) + 1) - 1
+        })
+        shareScoreBtn.addEventListener("click", function() {
+            let scoreContent = "I was able to guess the mystery character... " + mysteryCharacter.name + " in " + guessCounter + " guesses! Play Darth Vordle at darthvordle.com today!"
+            navigator.clipboard.writeText(scoreContent).then(function () {
+                console.log("Score copied to clipboard")
+                alert("Your score has been copied to your clipboard!")
+            }) 
+        })
+        searchInput.value = ""
+        searchInput.placeholder = "Enter Guess 1 of 8"
+    } else {
+        if (guessCounter != 8) {
+            if (guessCharacter.films[0] == mysteryCharacter.films[0]) {
+                filmDiv.style.color = "#06e606"
+                correctCounter++
+            }
+            if (guessCharacter.homeworld == mysteryCharacter.homeworld) {
+                homeworldDiv.style.color = "#06e606"
+                correctCounter++
+            }
+            if (guessCharacter.species == mysteryCharacter.species) {
+                speciesDiv.style.color = "#06e606"
+                correctCounter++
+            }
+            if (guessCharacter.gender == mysteryCharacter.gender) {
+                genderDiv.style.color = "#06e606"
+                correctCounter++
+            }
+            const guessHeightValue = Number(guessCharacter.height)
+            const mysteryHeightValue = Number(mysteryCharacter.height)
+            if (guessHeightValue == mysteryHeightValue) {
+                heightDiv.style.color = "#06e606"
+                correctCounter++
+            } else if (guessHeightValue > mysteryHeightValue) {
+                heightDiv.innerHTML = heightDiv.innerText + "&#x2193"             
+                if (guessHeightValue - mysteryHeightValue <= 5) {
+                    heightDiv.style.color = "#FFE81F"
+                }
+            } else if (mysteryHeightValue > guessHeightValue) {
+                heightDiv.innerHTML = heightDiv.innerText + "&#x2191"
+                if (mysteryHeightValue - guessHeightValue <= 5) {
+                    heightDiv.style.color = "#FFE81F"
+                }
+            }
+            const guessMassValue = Number(guessCharacter.mass)
+            const mysteryMassValue = Number(mysteryCharacter.mass)
+            if (guessMassValue == mysteryMassValue) {
+                massDiv.style.color = "#06e606"
+                correctCounter++
+            } else if (guessMassValue > mysteryMassValue) {
+                massDiv.innerHTML = massDiv.innerText + "&#x2193"
+                if (guessMassValue - mysteryMassValue <= 5) {
+                    massDiv.style.color = "#FFE81F"
+                }
+            } else if (mysteryMassValue > guessMassValue) {
+                massDiv.innerHTML = massDiv.innerText + "&#x2191"
+                if (mysteryMassValue - guessMassValue <= 5) {
+                    massDiv.style.color = "#FFE81F"
+                }
+            } else {
+                console.log(guessMassValue, mysteryMassValue)
+            }
+            if (correctCounter == 0) {
+                console.log("No matching attributes")
+            }
+            searchInput.value = ""
+        } else {
+            console.log("You lost")
+            winStatus = false
+            gameDone()
+            endHeader.innerText = "Oops, You Lost!"
+            endMessage.innerText = "The mystery character was... " + mysteryCharacter.name
+            playAgainBtn.addEventListener("click", function() {
+                endModal.classList.remove("active")
+                resetUI()
+                guessCounter = 0
+                return mysteryIndex = Math.floor((Math.random() * 83) + 1) - 1
+            })
+            shareScoreBtn.addEventListener("click", function() {
+                let scoreContent = "I couldn't guess the mystery character... " + mysteryCharacter.name + ". Play Darth Vordle at darthvordle.com today!"
+                navigator.clipboard.writeText(scoreContent).then(function () {
+                    console.log("Score copied to clipboard")
+                    alert("Your score has been copied to your clipboard!")
+                }) 
+            })
+            searchInput.value = ""
+            searchInput.placeholder = "Enter Guess 1 of 8" 
+        }
+    }
+}
+
+
+
+
+
+
