@@ -1,145 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="shortcut icon" type="image/ico" href="favicon.svg"/>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="shortcut icon" type="image/ico" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
     <title>Darth Vordle</title>
-    <meta name="description" content="Darth Vordle is a Star Wars Wordle inspired guessing game where players attempt to guess a mystery Star Wars Character.">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Darth Vordle is a Star Wars Wordle inspired guessing game where players attempt to guess a mystery Star Wars Character."
+    />
+  </head>
+  <body>
     <header>
-        <div class="title">
-            <img src="favicon.svg" alt="darth vader">
-        </div>      
-        <div class="buttons-container">
-            <button class="question">How To Play</button>
-            <button class="stats-btn">Stats</button>
-            <button class="about-btn">About</button>
-        </div>
+      <div class="title">
+        <img src="favicon.svg" alt="darth vader" />
+      </div>
+      <div class="buttons-container">
+        <button class="question">How To Play</button>
+        <button class="stats-btn">Stats</button>
+        <button class="about-btn">About</button>
+      </div>
     </header>
     <div class="main-content">
-        <h1>Darth Vordle</h1>
-        <h3>A Star Wars&#8482; Guessing game</h3>
-        <div class="search-container">
-            <input class="guess-input" placeholder="Enter Guess 1 of 8">
-            <ul class="suggestion-box">
-                <li>Luke Skywalker</li>
-            </ul>
+      <h1>Darth Vordle</h1>
+      <h3>A Star Wars&#8482; Guessing game</h3>
+      <div class="search-container">
+        <input class="guess-input" placeholder="Enter Guess 1 of 8" />
+        <ul class="suggestion-box">
+          <li>Luke Skywalker</li>
+        </ul>
+      </div>
+      <div class="character-info">
+        <div class="info-box">
+          <p>Name</p>
+          <div class="data-box1"></div>
         </div>
-        <div class="character-info">
-            <div class="info-box">
-                <p>Name</p>
-                <div class="data-box1"></div>
-            </div>
-            <div class="info-box">
-                <p>First Film</p>
-                <div class="data-box2"></div>
-            </div>
-            <div class="info-box">
-                <p>Homeworld</p>
-                <div class="data-box3"></div>
-            </div>
-            <div class="info-box">
-                <p>Gender</p>
-                <div class="data-box4"></div>
-            </div>
-            <div class="info-box">
-                <p>Species</p>
-                <div class="data-box5"></div>
-            </div>
-            <div class="info-box">
-                <p>Height</p>
-                <div class="data-box6"></div>
-            </div>
-            <div class="info-box">
-                <p>Mass</p>
-                <div class="data-box7"></div>
-            </div>
+        <div class="info-box">
+          <p>First Film</p>
+          <div class="data-box2"></div>
         </div>
+        <div class="info-box">
+          <p>Homeworld</p>
+          <div class="data-box3"></div>
+        </div>
+        <div class="info-box">
+          <p>Gender</p>
+          <div class="data-box4"></div>
+        </div>
+        <div class="info-box">
+          <p>Species</p>
+          <div class="data-box5"></div>
+        </div>
+        <div class="info-box">
+          <p>Height</p>
+          <div class="data-box6"></div>
+        </div>
+        <div class="info-box">
+          <p>Mass</p>
+          <div class="data-box7"></div>
+        </div>
+      </div>
     </div>
     <div class="modal-container" id="modal-one">
-        <div class="modal">
-            <span class="material-symbols-outlined" id="close-modal-one">close</span>
-            <div class="question-content">
-                <h1>Welcome To Darth Vordle!</h1>
-                <h3>Guess the mystery Star Wars&#8482; character!</h3>
-                <ul>
-                    <li>You have 8 guesses, try any character from the first 6 movies!</li>
-                    <li>Green in any row indicates a match!</li>
-                    <li>White in every row indicates no matching attributes</li>
-                    <li>Yellow in the height row indicates this attribute is within 5cm (around 2in)</li>
-                    <li>Yellow in the mass row indicates this attribute is within 10kg (around 22lbs)</li>
-                    <li>You can play an unlimited number of times a day!</li>
-                </ul>
-            </div>
+      <div class="modal">
+        <span class="material-symbols-outlined" id="close-modal-one"
+          >close</span
+        >
+        <div class="question-content">
+          <h1>Welcome To Darth Vordle!</h1>
+          <h3>Guess the mystery Star Wars&#8482; character!</h3>
+          <ul>
+            <li>
+              You have 8 guesses, try any character from the first 6 movies!
+            </li>
+            <li>Green in any row indicates a match!</li>
+            <li>White in every row indicates no matching attributes</li>
+            <li>
+              Yellow in the height row indicates this attribute is within 5cm
+              (around 2in)
+            </li>
+            <li>
+              Yellow in the mass row indicates this attribute is within 10kg
+              (around 22lbs)
+            </li>
+            <li>You can play an unlimited number of times a day!</li>
+          </ul>
         </div>
+      </div>
     </div>
     <div class="modal-container" id="modal-two">
-        <div class="modal">
-            <div class="modal-content">
-                <h1 class="end-header">Congratulations, You Won!</h1>
-                <p class="end-message">The mystery character was...</p>
-                <img class="character-image" src="images/1.jpg" alt="mystery character">
-                <div class="end-buttons">
-                    <button class="play-again">Play Again</button>
-                    <button class="share-score">Share Score</button>
-                </div>
-            </div>
+      <div class="modal">
+        <div class="modal-content">
+          <h1 class="end-header">Congratulations, You Won!</h1>
+          <p class="end-message">The mystery character was...</p>
+          <img
+            class="character-image"
+            src="images/1.jpg"
+            alt="mystery character"
+          />
+          <div class="end-buttons">
+            <button class="play-again">Play Again</button>
+            <button class="share-score">Share Score</button>
+          </div>
         </div>
+      </div>
     </div>
     <div class="modal-container" id="modal-three">
-        <div class="modal">
-            <span class="material-symbols-outlined" id="close-modal-three">close</span>            
-            <div class="stats-container">
-                <div class="stats-content">
-                    <div class="column">
-                        <h2>Games <br> Played</h2>
-                        <div class="num-games-played">0</div>
-                    </div>
-                    <div class="column">
-                        <h2>Win <br> PCT.</h2>
-                        <div class="win-pct">0%</div>
-                    </div>
-                </div>
-                <button class="share-stats">Share Stats</button>
+      <div class="modal">
+        <span class="material-symbols-outlined" id="close-modal-three"
+          >close</span
+        >
+        <div class="stats-container">
+          <div class="stats-content">
+            <div class="column">
+              <h2>
+                Games <br />
+                Played
+              </h2>
+              <div class="num-games-played">0</div>
             </div>
+            <div class="column">
+              <h2>
+                Win <br />
+                PCT.
+              </h2>
+              <div class="win-pct">0%</div>
+            </div>
+          </div>
+          <button class="share-stats">Share Stats</button>
         </div>
+      </div>
     </div>
     <div class="modal-container" id="modal-four">
-        <div class="modal">
-            <span class="material-symbols-outlined" id="close-modal-four">close</span>            
-            <div class="about-content">
-                <div class="privacy-about">
-                    <h3>Privacy Policy</h3>
-                    <p>We put your game stats including how many games played and how many wins in your browser's local storage so you can share them with others and earn bragging rights.</p>
-                    <p>IP tracking, Google Signals integration, USER ID generation, and ad personalization are not used. We only collect the bare minimum to come up with stats.</p>
-                </div>
-                <div class="tech-about">
-                    <h3>Technology and Inspiration</h3>
-                    <p>This site is inspired by <a href="https://poeltl.dunk.town/">Poeltl,</a> the NBA player guessing game.</p>
-                    <p>Darth Vordle was built in about a week using vanilla JS. The character database was created by gathering information from the Star Wars&#8482; dictionary, <a href="https://starwars.fandom.com/wiki/Main_Page">Wookieepedia.</a> The database includes revelant characters from the first 6 films to be relased, coming to a total of 82 characters.</p>
-                </div>
-                <div class="contact-about">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="https://discord.gg/zJuuz6fp8d">Discord</a></li>
-                    </ul>
-                    <p>This site was created by <a href="https://zachmcmullen.com">Zach McMullen</a> &#xA9; 2022</p>
-                </div>
-            </div>
+      <div class="modal">
+        <span class="material-symbols-outlined" id="close-modal-four"
+          >close</span
+        >
+        <div class="about-content">
+          <div class="privacy-about">
+            <h3>Privacy Policy</h3>
+            <p>
+              We put your game stats including how many games played and how
+              many wins in your browser's local storage so you can share them
+              with others and earn bragging rights.
+            </p>
+            <p>
+              IP tracking, Google Signals integration, USER ID generation, and
+              ad personalization are not used. We only collect the bare minimum
+              to come up with stats.
+            </p>
+          </div>
+          <div class="tech-about">
+            <h3>Technology and Inspiration</h3>
+            <p>
+              This site is inspired by
+              <a href="https://poeltl.dunk.town/">Poeltl,</a> the NBA player
+              guessing game.
+            </p>
+            <p>
+              Darth Vordle was built in about a week using vanilla JS. The
+              character database was created by gathering information from the
+              Star Wars&#8482; dictionary,
+              <a href="https://starwars.fandom.com/wiki/Main_Page"
+                >Wookieepedia.</a
+              >
+              The database includes revelant characters from the first 6 films
+              to be relased, coming to a total of 82 characters.
+            </p>
+          </div>
+          <div class="contact-about">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="https://discord.gg/zJuuz6fp8d">Discord</a></li>
+            </ul>
+            <p>
+              This site was created by
+              <a href="https://zachmcmullen.com">Zach McMullen</a> &#xA9; 2022
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <script src="js/app.js"></script>
     <script src="js/characters.js"></script>
     <script src="js/nameList.js"></script>
-</body>
+  </body>
 </html>
